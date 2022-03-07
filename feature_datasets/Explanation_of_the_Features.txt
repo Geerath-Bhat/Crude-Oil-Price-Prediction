@@ -1,0 +1,68 @@
+Feature 1
+DATES:----------------
+Last Scrapped today.
+From 2016-12-15 to 2021-12-15 (5 Years data)
+
+
+Feature 2
+Utilization of Refinery in %:-----------------
+
+- Example - paper to book converter
+total input paper capacity is 100 papers/hr
+but if we input 80 papers/hr to convert to a book, then its utilization rate is 80/100 = 80%.
+
+- Either use EXCEL or API
+
+- Refinery utilization rates affect crude oil prices based on the ability of refineries to convert
+crude oil to final products.
+
+
+Feature 3,4,5
+Production, Demand and Gap (in million tonnes):---------------
+Supply and Demand of oil affect the oil price
+
+
+Feature 6
+Futures contract prices in $USD--------------------
+Check this for what is future price:
+https://www.investopedia.com/ask/answers/062315/how-are-commodity-spot-prices-different-futures-prices.asp
+4 Contracts for crude oil for our years. Contract 1 FP, 2,3,4.
+There are 4 contracts currently live in the market.
+
+
+Feature 7
+Global Sales in millions------------
+Global sales of electronic vehicles (EV) - Worldwide Sales data
+
+
+Feature 8
+Seasonal Demand---------
+There is seasonality in demand for oil, where the demand in colder months 
+is usually higher than in warmer months. We, therefore, assume two values: 
+‘1’ to represent the warmer months spanning April to September, and ‘2’ 
+to represent the colder months spanning October to March.
+April to September 1
+October to March 2
+
+
+Feature 9
+Average price of Last Day -  in ieee paper it is weekly, but we have daily data--------------
+Average price of previous week: The average price of
+the previous week is an input for the present week. This
+attribute is aimed at providing continuality of oil prices
+throughout the weeks. Just like yt, yt+1 lag variables.
+
+
+
+Feature 10
+Random impact factor (WEIF/REIF): like new corona effects taken care to some level etc.------------
+
+This novel attribute is aimed at accounting for the impact of political,
+economic and other external events on the oil price
+market. With such an effect being ""unpredictable"", we use
+random numerical values ranging from 0.1 to 0.5; with 0.5
+being a major world event that could impact the oil prices,
+and 0.1 a minor world event. Currently it is random in code as events are random.
+One Idea is - Tune this input based on news,tweets etc.
+
+
